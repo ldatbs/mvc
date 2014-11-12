@@ -1,0 +1,15 @@
+{
+    "Environment": 0,
+    "Modules": {
+        "System":   {"Listen": "localhost:8081", "DB": "System"}
+    },
+    "FileServers": {
+        "Misc":     {"Listen": "localhost:8082", "Path": "/", "Root": "{HomeDir}/public"}
+    },
+    "DB": {
+        "System":   {"Type": "mysql",   "DSN": "user:pass@tcp(localhost:3306)/system?charset=utf8", "Profiling": false}
+    },
+    "Cache": {
+        "Enabled": true, "Server": "localhost", "Port": 11211, "Profiling": false
+    }
+}
